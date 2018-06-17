@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Match-Match Game</title>
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/fontawesome-all.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header class="main_header">
+			<div class="container header_wrapper">
+				<div class="buttons_wrapper">
+					<button class="show_score">Score</button>
+					<button class="return_back hidden">Back to rules</button>
+				</div>
+				<h1 class="main_heading">Match-Match Game</h1>
+				<div class="buttons_wrapper">
+					<button class="choose_cards">Choose cards</button>
+					<button class="new_game hidden">Start Game</button>
+					<button class="finish_game hidden">Back to rules</button>
+				</div>
+			</div>
+		</header>
+		<main class="main_content">
+			<div class="container">
+				<section class="rules">
+					<p>Do you have a good short-term memory? If not - don't be disappointed because you can train it!</p>
+					<h2>How to Play</h2>
+					<ol>
+						<li>Press "Choose cards" button.</li>
+						<li>Enter your name and email.</li>
+						<li>Choose the difficulty of the game and the type of card shirt you like.</li>
+						<li>Click "New Game" button and the game starts immediately with the timer.</li>
+						<li>Select two cards and try to match the picture.</li>
+						<li>If two pictures matches you can go again.</li>
+						<li>If two pictures don't match they will turn back.</li>
+						<li>The player who find all pairs win!</li>
+					</ol>
+					<div class="responsive">
+						<p>	The minimum width of the game field is 550px so you would better to use landscape orientation of your device</p>
+						<i class="fas fa-times close_icon"></i>
+					</div>
+				</section>
+				<section class="game_settings hidden">
+					<div class="game_settings_wrapper">
+						<div class="settings_column">
+							<h2>Fill the form below</h2>
+							<form class="registration">
+								<div class="form_row">
+									<label for="first_name">Your First Name<span class="red_mark">*</span></label>
+									<input id="first_name" type="text" class="first_name" required autocomplete="given-name">
+									<i class="check-icon fas fa-check opacity"></i>
+								</div>
+								<div class="form_row">
+									<label for="last_name">Your Last Name<span class="red_mark">*</span></label>
+									<input id ="last_name" type="text" class="last_name" required autocomplete="family-name">
+									<i class="check-icon fas fa-check opacity"></i>
+								</div>
+								<div class="form_row">
+									<label for="email">Your email<span class="red_mark">*</span></label>
+									<input type="email" id="email" class="email" required autocomplete="email">
+									<i class="check-icon fas fa-check opacity"></i>
+								</div>
+								<button type="submit" class="submit_registration">Submit</button>
+							</form>
+						</div>
+						<div class="settings_column choose_shirt">
+							<h2>Choose card shirt</h2>
+							<ul class="cards_shirt">
+								<li class="card pattern1" data-pattern="1"></li>
+								<li class="card pattern2" data-pattern="2"></li>
+								<li class="card pattern3" data-pattern="3"></li>
+							</ul>
+						</div>
+						<div class="settings_column choose_difficulty">
+							<h2>Choose difficulty</h2>
+							<ul class="difficulty">
+								<li class="diff_row" data-difficulty="8">
+									<p>8 cards</p>
+								</li>
+								<li class="diff_row" data-difficulty="16">
+									<p>16 cards</p>
+								</li>
+								<li class="diff_row" data-difficulty="24">
+									<p>24 cards</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<section class="game_field hidden">
+					<div class="timer">
+						<span class="minutes"></span>
+						<span>:</span>
+						<span class="seconds"></span>
+					</div>
+					<div class="congrats">
+						<p>You win!</p>
+						<p>Click "score" button to see best players!</p>
+					</div>
+				</section>
+				<section class="score">
+					<div class="container score_wrapper">
+						<h2>Best Players</h2>
+						<div class="tabs">
+							<button class="tab active" data-tab = "8">8 cards</button>
+							<button class="tab" data-tab = "16">16cards</button>
+							<button class="tab" data-tab = "24">24 cards</button>
+						</div>
+						<ol class="result_wrapper result8 fadeIn"></ol>
+						<ol class="result_wrapper result16 hidden"></ol>
+						<ol class="result_wrapper result24 hidden"></ol>
+					</div>
+				</section>
+			</div>
+		</main>
+	</div>
+
+	<script src="js/scripts.js"></script>
+</body>
+</html>
