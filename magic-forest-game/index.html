@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Волшебный лес</title>
+  <link rel="stylesheet" href="css/slick-theme.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="score opacity">
+    <h2>Best players</h2>
+    <ol class="score_wrapper"></ol>
+  </div>
+  <section class="start_game">
+    <header>
+      <div class="container">
+        <p class="main_heading" id="main_heading">Добро пожаловать в игру</p>
+        <h1 class="game_name violet">Волшебный Лес</h1>
+      </div>
+      <div class="decor"></div>
+    </header>
+    <div class="main_section">
+      <div class="rules">
+        <div class="rules_wrapper">
+            <div class="rules_block">
+              <h2 class="step">Цель игры</h2>
+                <p>Цель игры заработать как можно больше очков. Даётся одно очко за каждого побеждённого волшебника. Ты будешь участвовать в <span class="violet">Магических битвах</span> с одним из наших <span class="violet">Волшебников</span>.</p>
+                <p>Чтобы победить волшебника тебе нужно будет решать арифметические примеры, переводить слова с русского языка на английски и обратоно.</p>
+                <p>Поэтому, чтобы победить в этой игре ты должен быть<span class="violet">самым умным</span>! Давай проверим, так ли это? :)</p>
+                <img src="img/arrow.svg" alt="Mfgic Castle" class="arrow arrow_right">
+                <button class="button_score">Показать результаты</button>
+            </div>
+            <div class="rules_block">
+              <h2 class="step">Заполни форму внизу</h2>
+              <form class="registration">
+                <label for="name">Введи своё имя</label>
+                <input type="text" class="name" id="name" required>
+                <label for="email">Введи свой имейл</label>
+                <input type="email" class="email" id="email" required>
+                <input type="submit" value="Готово" class="submit_form">
+              </form>
+              <img src="img/arrow.svg" alt="Mfgic Castle" class="arrow arrow_left">
+            </div>
+            <div class="rules_block">
+              <h2 class="step">Выбери себе персонажа</h2>
+              <div class="character_carousel">
+                <div class="slide" data-character="1">
+                  <img src="img/character1.png" alt="" class="character">
+                </div>
+                <div class="slide" data-character="2">
+                    <img src="img/character2.png" alt="" class="character">
+                </div>
+                <div class="slide" data-character="3">
+                    <img src="img/character3.png" alt="" class="character">
+                </div>
+              </div>
+                <img src="img/arrow.svg" alt="Mfgic Castle" class="arrow arrow_right">
+            </div>
+            <div class="rules_block">
+              <h2 class="step">Начни игру и веселись!</h2>
+              <button class="start">начать игру</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="game_field hidden">
+      <!-- <div class="menu_wrapper">
+        <div class="container">
+        </div>
+      </div> -->
+      <div class="canvas_wrapper">
+        <div class="health_container health_container_hero">
+          <div class="hero_name"></div>
+          <div class="health_wrapper">
+              <div class="health hero_health"></div>
+              <div class="health_count_wrapper">
+                <span class="health_count hero_health_count"></span>
+                <span>hp</span>
+              </div>
+          </div>
+        </div>
+        <div class="health_container health_container_wizzard">
+          <div class="wizard_name"></div>
+          <div class="health_wrapper">
+              <div class="health wizard_health"></div>
+              <div class="health_count_wrapper">
+                <span class="health_count wizard_health_count"></span>
+                <span>hp</span>
+              </div>
+          </div>
+        </div>
+        <div class="round_container">
+          <span class="round"></span>
+          <span>раунд</span>
+        </div>
+        <div class="wizard_attak">
+          <p>Волшебник атакует!</p>
+        </div>
+        <div class="wizard_miss">
+          <p>ПРОМАЗАЛ!</p>
+        </div>
+        <div class="lose_game game_result">
+          <p>Игра окончена</p>
+          <p>Ты проиграл:(</p>
+          <button class="finish_game">В главное меню</button>
+        </div>
+        <div class="game_result win_round">
+          <p>Поздравляем!</p>
+          <p class="win_text">Ты выйграл <span class="round_number"></span></p>
+          <button class="button_next_round">Перейти в следующий раунд</button>
+        </div>
+        <div class="game_result win_game">
+          <p>Поздравляем!</p>
+          <p>Ты выйграл игру!</p>
+          <button class="finish_game">В главное меню</button>
+        </div>
+        <div class="spell_wrapper opacity">
+          <h2 class="violet"> Выбери заклинание!</h2>
+          <img src="img/count.svg" alt="" class="count_icon spell_icon" title="Арифметическое задание" id ="taks1" data-task ="1">
+          <img src="img/translation1.svg" alt="" class="translation1_icon spell_icon" title="Перевод с русского на английский" id = "task2" data-task ="2">
+          <img src="img/translation2.svg" alt="" class="translation2_icon spell_icon" title="Перевод с английского на русский" id = "task3" data-task ="3">
+        </div>
+        <canvas id="canvas" class="main_game" width="1200" height="600"></canvas>
+      </div>
+  </section>
+  <section class="task_field">
+    <div class="right_answer">
+      <span>Молодец!</span>
+    </div>
+    <div class="false_first">
+      <span>Неверно! У тебя осталась 1 попытка!</span>
+    </div>
+    <div class="false_second"></div>
+    <div class="task_wrapper task_wrapper1" data-taskwrapper = "1">
+      <h2>Реши арифметическое задание</h2>
+      <div class="numbers_wrapper">
+        <div class="number_wrapper">
+          <span class="first_number"></span>
+          <span class="sign"></span>
+        </div>
+        <input type="text" class="second_number number_input">
+        <div class="number_wrapper">
+          <span>=</span>
+          <span class="third_number"></span>
+        </div>
+      </div>
+      <input type="submit" value="Проверить" class="button_check_task check_number" data-click="2">
+    </div>
+    <div class="task_wrapper task_wrapper2" data-taskwrapper = "2">
+      <h2>Переведи с русского на английский</h2>
+      <div class="words_wrapper">
+        <div class="word_wrapper">
+            <span class="first_word"></span>
+        </div>
+          <input type="text" class="translation_input russian_translation_input">
+      </div>
+      <input type="submit" value="Проверить" class="button_check_task check_translation" data-click="2">
+    </div>
+    <div class="task_wrapper task_wrapper3" data-taskwrapper = "3">
+      <h2>Переведи с английского на русский</h2>
+      <div class="words_wrapper">
+        <div class="word_wrapper">
+            <span class="first_word"></span>
+        </div>
+        <input type="text" class="translation_input english_translation_input" data-click="2">
+      </div>
+      <input type="submit" value="Проверить" class="button_check_task check_translation" data-click = "2">
+    </div>
+  </section>
+
+  <script src="dist/main.js"></script>
+</body>
+</html>

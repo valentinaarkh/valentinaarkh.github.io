@@ -1,0 +1,23 @@
+{
+  "name": "final_game",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "node_modules/.bin/webpack-dev-server development",
+    "build": "webpack --mode production"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "path": "^0.12.7",
+    "webpack": "^4.10.2",
+    "webpack-cli": "^3.0.0",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "npm": "^6.1.0",
+    "slick-carousel": "^1.8.1"
+  }
+}
