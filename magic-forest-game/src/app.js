@@ -33,7 +33,7 @@ let game_settings = {
   playerEmail: "",
   playerScore: 0,
   heroNumber: 1,
-  gameBg: getRandomInt(1,4),
+  gameBg: "",
 }
 
 let app = function(){
@@ -221,7 +221,7 @@ let app = function(){
 
   function winRound(round){
     if ( round == 10 ){
-      let win_game = docuemnt.querySelector(".win_text");
+      let win_game = docuemnt.querySelector(".win_game");
       win_game.classList.add("answer_visible");
       finishGame();
     }else{
@@ -261,6 +261,7 @@ let app = function(){
       },5000);
       let wizard_attak_result = wizardAttak();
       setTimeout(function(){
+        wizard_attak.classList.remove("wizard_attak_visible");
         if ( wizard_attak_result == "miss"){
           miss.classList.add("wizard_miss_visible");
           wizard = new Character (1, "stand", "wizard", [1100, 415]);
@@ -409,6 +410,8 @@ function startGame(){
     section_start.classList.add("hidden");
     section_game.classList.remove("hidden");
     score_wrapper.classList.add("opacity");
+    game_settings.round = 1;
+    game_settings.playerScore = 0;
     app();
   }
 }
@@ -426,11 +429,15 @@ function startGame(){
    let current_name_input = document.getElementById("name");
    let current_email_input = document.getElementById("email");
    let win_game = document.querySelector(".win_game");
+   let win_round = document.querySelector(".win_round");
+   let lose = document.querySelector(".lose_game");
 
    section_game.classList.add("hidden");
    section_start.classList.remove("hidden");
    score_wrapper.classList.add("opacity");
    win_game.classList.remove("answer_visible");
+   win_round.classList.remove("answer_visible");
+   lose.classList.remove("answer_visible");
    document.body.scrollTop = document.documentElement.scrollTop = 0;
 
    current_name_input.classList.remove("done");

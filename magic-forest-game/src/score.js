@@ -22,7 +22,6 @@ function generateScore(game_settings){
         for (var i = 0; i < score.length; i++) {
           if ( current_score_object.score_number >= score[i].score_number ){
             score.splice(i,0,current_score_object);
-            console.log("middle")
             break;
         }
       }
