@@ -19,10 +19,8 @@ $(".character_carousel").slick({
 localStorage.setItem("current_name", "");
 localStorage.setItem("current_email", "");
 if ( !localStorage.score ){
-  localStorage.setItem("score","");
+  localStorage.setItem("score","[]");
 }
-
-localStorage.score = stringifyScore(arr);
 
 insertScore();
 
@@ -37,11 +35,6 @@ let game_settings = {
   heroNumber: 1,
   gameBg: getRandomInt(1,4),
 }
-
-game_settings.playerScore = 0;
-game_settings.playerName = "Hello";
-
-generateScore(game_settings);
 
 let app = function(){
 
@@ -217,7 +210,7 @@ let app = function(){
       let attak_result = decreaseHealth("wizard",game_settings.round);
       if ( attak_result == "wizard_dead" ){
         wizard = new Character (1, "die", "wizard", [1080,415]);
-        winRound(game_settings_round);
+        winRound(game_settings.round);
       }else{
         wizard = new Character(1, "stand", "wizard", [1100,415]);
         hero = new Character (game_settings.heroNumber, "stand", "hero", [0, 415]);
