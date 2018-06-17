@@ -22,9 +22,6 @@ if ( !localStorage.score ){
   localStorage.setItem("score","");
 }
 
-let arr = [];
-arr.push({name:"AAA", score_number: 10},{name:"BBB", score_number: 9},{name:"BBB", score_number: 8},{name:"BBB", score_number: 7},{name:"BBB", score_number: 6},{name:"BBB", score_number: 5},{name:"BBB", score_number: 4},{name:"BBB", score_number: 3});
-
 localStorage.score = stringifyScore(arr);
 
 insertScore();
