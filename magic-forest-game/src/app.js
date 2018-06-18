@@ -446,4 +446,6 @@ function startGame(){
    current_email_input.value = "";
    localStorage.current_name = "";
    localStorage.current_email = "";
+
+   location.reload();
  }
