@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Cantarell';
+    src: url('../fonts/CantarellRegular/Cantarell-Regular.eot');
+    src: url('../fonts/CantarellRegular/Cantarell-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CantarellRegular/Cantarell-Regular.woff2') format('woff2'),
+        url('../fonts/CantarellRegular/Cantarell-Regular.woff') format('woff'),
+        url('../fonts/CantarellRegular/Cantarell-Regular.ttf') format('truetype'),
+        url('../fonts/CantarellRegular/Cantarell-Regular.svg#Cantarell-Regular') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Trend Sans One';
+    src: url('../fonts/TrendSansOne/TrendSansOne.eot');
+    src: url('../fonts/TrendSansOne/TrendSansOne.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TrendSansOne/TrendSansOne.woff2') format('woff2'),
+        url('../fonts/TrendSansOne/TrendSansOne.woff') format('woff'),
+        url('../fonts/TrendSansOne/TrendSansOne.ttf') format('truetype'),
+        url('../fonts/TrendSansOne/TrendSansOne.svg#TrendSansOne') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
