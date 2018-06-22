@@ -1,0 +1,59 @@
+/*Agora Sans Pro Regular*/
+
+@font-face {
+			font-family: "AgoraSansProRegular";
+			src: url("../fonts/AgoraSansProRegular/AgoraSansProRegular.eot");
+			src: url("../fonts/AgoraSansProRegular/AgoraSansProRegular.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/AgoraSansProRegular/AgoraSansProRegular.woff") format("woff"),
+			url("../fonts/AgoraSansProRegular/AgoraSansProRegular.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+
+/*Agora Sans Pro Bold*/
+
+@font-face {
+			font-family: "AgoraSansProBold";
+			src: url("../fonts/AgoraSansProBold/AgoraSansProBold.eot");
+			src: url("../fonts/AgoraSansProBold/AgoraSansProBold.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/AgoraSansProBold/AgoraSansProBold.woff") format("woff"),
+			url("../fonts/AgoraSansProBold/AgoraSansProBold.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+
+/*Agora Sans Pro Light*/
+
+	@font-face {
+			font-family: "AgoraSansProLight";
+			src: url("../fonts/AgoraSansProLight/AgoraSansProLight.eot");
+			src: url("../fonts/AgoraSansProLight/AgoraSansProLight.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/AgoraSansProLight/AgoraSansProLight.woff") format("woff"),
+			url("../fonts/AgoraSansProLight/AgoraSansProLight.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+
+/*Agora Sans Pro Thin*/
+
+	@font-face {
+			font-family: "AgoraSansProThin";
+			src: url("../fonts/AgoraSansProThin/AgoraSansProThin.eot");
+			src: url("../fonts/AgoraSansProThin/AgoraSansProThin.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/AgoraSansProThin/AgoraSansProThin.woff") format("woff"),
+			url("../fonts/AgoraSansProThin/AgoraSansProThin.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+/*Agora Sans Pro XThin*/
+
+	@font-face {
+			font-family: "AgoraSansProXThin";
+			src: url("../fonts/AgoraSansProXThin/AgoraSansProXThin.eot");
+			src: url("../fonts/AgoraSansProXThin/AgoraSansProXThin.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/AgoraSansProXThin/AgoraSansProXThin.woff") format("woff"),
+			url("../fonts/AgoraSansProXThin/AgoraSansProXThin.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+
