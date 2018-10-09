@@ -1,0 +1,38 @@
+.burger_menu{
+  @include flex;
+  align-items: center;
+  font-family: "OpenSansBold";
+  cursor: pointer;
+  display: none;
+  position: relative;
+}
+.burger{
+  position: relative;
+}
+.burger_line{
+  width: 30px;
+  height: 3px;
+  background: $accent;
+  display: block;
+  margin: 5px 0;
+  border-radius: 3px;
+  @include transition(all, .2s, ease-out);
+}
+.menu_name{
+  margin-right: 15px;
+}
+.burger_menu.is_open{
+  .burger_line{
+    &:nth-child(1){
+      transform: rotate(45deg) translateX(5px) translateY(5px);
+    }
+    &:nth-child(2){
+      @include transform(scale(0));
+    }
+    &:nth-child(3){
+      transform: rotate(135deg) translateY(6px) translateX(-6px);
+      top: 0;
+      left: 0;
+    }
+  }
+}

@@ -1,0 +1,65 @@
+$pinky_red: #f03464;
+$pink: #f6809e;
+
+$accent: #f43333;
+$bg: #4dadf5;
+
+.upper{
+  text-transform: uppercase;
+}
+body{
+  font-family: "OpenSansRegular", sans-serif;
+  font-size: 1.6rem;
+}
+h1, .logo{
+  font-family: "Oswald", serif;
+  color: $accent;
+}
+h1{
+  font-size: 4.5rem;
+}
+h2.section_heading{
+  font-family: "Oswald", serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+h3{
+  font-family: "Oswald", serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: $accent;
+}
+.heading_description{
+  color: #000;
+  font-size: 4.5rem;
+  font-family: "OpenSansCondensedBold";
+  margin-top: 200px;
+  line-height: 60px;
+  letter-spacing: 0.5px;
+}
+span.accent{
+  color: $accent;
+  font-family: "OpenSansBold";
+}
+::-webkit-input-placeholder{
+  color:transparentize($accent, 0.4);
+}
+::-moz-placeholder{
+  color:transparentize($accent, 0.4);
+}
+:-moz-placeholder{
+  color:transparentize($accent, 0.4);
+}
+:-ms-input-placeholder{
+  color:transparentize($accent, 0.4);
+}
+textarea::-webkit-input-placeholder{
+  font-family: "OpenSansRegular";
+}
+textarea::-moz-placeholder{
+  font-family: "OpenSansRegular";
+}
+textarea:-ms-input-placeholder{
+  font-family: "OpenSansRegular";
+}

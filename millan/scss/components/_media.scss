@@ -1,0 +1,132 @@
+@media only screen and (max-width: 1010px) {
+  .main_menu li{
+    padding: 10px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .main_menu_wrapper{
+    border: 1px solid #ddd;
+    position: absolute;
+    right: -100%;
+    top: 110px;
+    z-index: 20;
+    @include transition(right, .5s, linear);
+  }
+  .main_menu_wrapper.visible{
+    right: 0;
+  }
+  .main_menu{
+    flex-direction: column;
+    background: #fff;
+  }
+  .main_menu li{
+    padding: 20px 40px;
+    border-bottom: 1px solid #ddd;
+    color: $accent;
+    &:last-child{
+      border-bottom-color: transparent;
+    }
+  }
+  .tel_section{
+    color: #fff;
+    background: $accent;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  .burger_menu{
+    @include flex;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .heading_description{
+    font-size: 3rem;
+    line-height: 40px;
+  }
+  .teacher_img{
+    width: 200px;
+    height: 200px;
+  }
+  .contacts_wrapper{
+    flex-wrap: wrap;
+  }
+  .adress_column{
+    width: 100%;
+  }
+  .adress_line .name{
+    width: 50%;
+  }
+  .adress_line .contact{
+    width: 50%;
+  }
+  .map_column{
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .teachers_wrapper{
+    flex-direction: column;
+  }
+  .teachers_container{
+    @include transform(scale(1));
+  }
+}
+@media (max-width: 576px) {
+  .section p{
+    width: 100%;
+  }
+  .menu_section{
+    background: #fff;
+    padding: 10px 0;
+  }
+  .heading_description{
+    margin-top: 60px;
+    text-align: center;
+  }
+  .header_img{
+    width: 50%;
+    top: 40%;
+  }
+  .advantage{
+    width: 60%;
+    margin: 0 auto;
+  }
+  .sell_form{
+    width: 100%;
+    padding: 0;
+  }
+  .sell_form input, textarea{
+    width: 90%;
+    margin: 0 auto 20px;
+  }
+  .heading_content{
+    width: 100%;
+  }
+  .adress_line{
+    font-size: 14px;
+  }
+}
+@media (max-width: 430px){
+  .content{
+    padding: 0 10px;
+  }
+  .header_img{
+    width: 80%;
+  }
+  .heading_description{
+    margin-top: 30px;
+    font-size: 2.5rem;
+    line-height: 30px;
+  }
+  .advantage{
+    width: 80%;
+  }
+  .slick-next{
+    right: -20px;
+  }
+  .slick-prev{
+    left: -20px;
+  }
+  .slick-prev:before, .slick-next:before{
+    font-size: 15px;
+  }
+}
