@@ -253,7 +253,7 @@ header {
 .header_img {
   position: absolute;
   right: 5%;
-  top: 20%;
+  top: 10%;
   width: 40%; }
 
 .main_menu {
@@ -386,7 +386,7 @@ header {
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  background: url("../img/teacher_img.jpg") no-repeat;
+  background: url("../img/teacher.jpg") no-repeat 25% x;
   background-size: cover;
   display: block;
   margin: 0 auto;
@@ -531,6 +531,14 @@ footer {
     color: #f43333; }
     .main_menu li:last-child {
       border-bottom-color: transparent; }
+    .main_menu li:hover, .main_menu li:active {
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      -ms-transform: scale(1);
+      -o-transform: scale(1);
+      transform: scale(1); }
+    .main_menu li::after {
+      background: transparent; }
   .tel_section {
     color: #fff;
     background: #f43333;
@@ -586,6 +594,8 @@ footer {
   .advantage {
     width: 60%;
     margin: 0 auto; }
+    .advantage p {
+      text-align: justify; }
   .sell_form {
     width: 100%;
     padding: 0; }
