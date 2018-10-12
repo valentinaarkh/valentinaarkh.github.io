@@ -26,6 +26,12 @@
     &:last-child{
       border-bottom-color: transparent;
     }
+    &:hover, &:active{
+      @include transform(scale(1));
+    }
+    &::after{
+      background: transparent;
+    }
   }
   .tel_section{
     color: #fff;
@@ -89,6 +95,9 @@
   .advantage{
     width: 60%;
     margin: 0 auto;
+    & p{
+        text-align: justify;
+    }
   }
   .sell_form{
     width: 100%;
