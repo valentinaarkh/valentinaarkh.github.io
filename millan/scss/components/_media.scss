@@ -1,3 +1,8 @@
+@media only screen and (max-width: 1045px) {
+  .tel_section{
+    font-size: 1.6rem;
+  }
+}
 @media only screen and (max-width: 1010px) {
   .main_menu li{
     padding: 10px;
@@ -69,6 +74,10 @@
   }
 }
 @media (max-width: 768px) {
+  .top_button{
+    right: 20px;
+    bottom: 20px;
+  }
   .teachers_wrapper{
     flex-direction: column;
   }
@@ -94,9 +103,9 @@
   }
   .advantage{
     width: 60%;
-    margin: 0 auto;
-    & p{
-        text-align: justify;
+    margin: 0 auto 30px;
+    &:last-child{
+      margin-bottom: 0;
     }
   }
   .sell_form{
@@ -115,6 +124,10 @@
   }
 }
 @media (max-width: 430px){
+  .top_button{
+    right: 5px;
+    bottom: 5px;
+  }
   .content{
     padding: 0 10px;
   }

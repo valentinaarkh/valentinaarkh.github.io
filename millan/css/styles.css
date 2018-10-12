@@ -114,6 +114,9 @@ a {
   text-decoration: none;
   color: inherit; }
 
+textarea {
+  resize: none; }
+
 .content {
   width: 100%;
   max-width: 1200px;
@@ -180,6 +183,24 @@ button.call {
   transform: translateX(-50%);
   box-shadow: 0 0 3px 0 #f43333; }
 
+.top_button {
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 50%;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  z-index: 100;
+  display: none;
+  background: #f43333;
+  cursor: pointer;
+  outline: none; }
+  .top_button i {
+    font-size: 3rem;
+    color: #fff; }
+
 header {
   width: 100%;
   height: 100vh;
@@ -203,27 +224,6 @@ header {
   left: 0;
   z-index: 10; }
 
-.scroll_down {
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%);
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
-  -ms-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-  font-size: 6rem;
-  color: #f43333;
-  cursor: pointer; }
-  .scroll_down:hover {
-    color: #4dadf5;
-    bottom: 20px; }
-
 .menu_wrapper {
   display: -webkit-flex;
   display: -moz-flex;
@@ -239,6 +239,7 @@ header {
 .tel_section {
   font-family: "OpenSansBold";
   color: #f43333;
+  font-size: 2rem;
   padding: 10px 0; }
 
 .menu_section {
@@ -416,6 +417,8 @@ header {
   margin-bottom: 20px;
   outline: none;
   font-size: 1.6rem; }
+  .sell_form input:focus, textarea:focus {
+    box-shadow: 0 0 2px 1px #f43333; }
 
 .contacts_wrapper {
   display: -webkit-flex;
@@ -475,8 +478,12 @@ footer {
   .gallery_wrapper img {
     width: 100%; }
 
+.gallery_slide_large {
+  outline: none; }
+
 .gallery_slide {
-  padding: 5px; }
+  padding: 5px;
+  outline: none; }
 
 .slick-dots li.slick-active button:before {
   color: #f43333;
@@ -503,6 +510,10 @@ footer {
   box-sizing: border-box; }
   .gallery_item img {
     width: 100%; }
+
+@media only screen and (max-width: 1045px) {
+  .tel_section {
+    font-size: 1.6rem; } }
 
 @media only screen and (max-width: 1010px) {
   .main_menu li {
@@ -570,6 +581,9 @@ footer {
     width: 100%; } }
 
 @media (max-width: 768px) {
+  .top_button {
+    right: 20px;
+    bottom: 20px; }
   .teachers_wrapper {
     flex-direction: column; }
   .teachers_container {
@@ -593,9 +607,9 @@ footer {
     top: 40%; }
   .advantage {
     width: 60%;
-    margin: 0 auto; }
-    .advantage p {
-      text-align: justify; }
+    margin: 0 auto 30px; }
+    .advantage:last-child {
+      margin-bottom: 0; }
   .sell_form {
     width: 100%;
     padding: 0; }
@@ -608,6 +622,9 @@ footer {
     font-size: 14px; } }
 
 @media (max-width: 430px) {
+  .top_button {
+    right: 5px;
+    bottom: 5px; }
   .content {
     padding: 0 10px; }
   .header_img {
