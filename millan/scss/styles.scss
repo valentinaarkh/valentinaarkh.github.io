@@ -245,6 +245,62 @@ header{
   box-shadow: 0 0 5px 1px $accent;
   @include transition(all, .2s, linear);
 }
+.section_news_content{
+  position: relative;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}
+.news_left_col, .news_right_col{
+  width: 50%;
+}
+.subscr_animation{
+  position: absolute;
+  top: 60%;
+  left: 15%  ;
+  font-size: 4rem;
+  color: $accent;
+  font-family: "OswaldBold";
+  animation: blink 1.2s ease-in-out infinite;
+}
+.subscr_arrow{
+  position: absolute;
+  bottom: 50%;
+  right: -80px;
+}
+.vk_ref{
+  display: block;
+  position: relative;
+  & img{
+    width: 400px;
+    @include transition(all, .3s, ease);
+    &:hover{
+      @include transform(scale(1.1));
+      box-shadow: 0 0 3px 2px $accent;
+    }
+  }
+}
+.click{
+  font-size: 6rem;
+  color: $accent;
+  font-family:"OswaldBold";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  @include transform(translate(-50%, -50%));
+}
+
+@keyframes blink{
+  0%{
+    @include transform(scale(1  ));
+  }
+  50%{
+    @include transform(scale(1.1));
+  }
+  100%{
+    @include transform(scale(1  ));
+  }
+}
 .section_form p{
   text-align: center;
 }
