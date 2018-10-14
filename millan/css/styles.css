@@ -254,7 +254,7 @@ header {
 .header_img {
   position: absolute;
   right: 5%;
-  top: 10%;
+  top: 15%;
   width: 40%; }
 
 .burger_menu {
@@ -585,7 +585,10 @@ footer {
 @media only screen and (max-width: 992px) {
   .heading_description {
     font-size: 3rem;
-    line-height: 40px; }
+    line-height: 40px;
+    margin-top: 150px; }
+  .header_img {
+    top: 20%; }
   .teacher_img {
     width: 200px;
     height: 200px; }
@@ -603,6 +606,8 @@ footer {
     font-size: 2.5rem; } }
 
 @media (max-width: 768px) {
+  .header_img {
+    top: 25%; }
   .top_button {
     right: 20px;
     bottom: 20px; }
