@@ -50,6 +50,11 @@ button.call{
     background: $accent;
   }
 }
+.fa-graduation-cap{
+  font-size: 2.2rem;
+  color: $accent;
+  margin-right: 5px;
+}
 .section .subheading{
     font-size: 2rem;
     font-family: "OpenSansBold";
@@ -205,9 +210,20 @@ header{
   line-height: 2.5rem;
   @include kerning(0.5);
   margin: 15px auto;
-  width: 70%;
+  width: 80%;
   text-indent:2rem;
   text-align: justify;
+}
+.about_small_section{
+  text-align: left;
+  width: 80%;
+  margin: 0 auto;
+  & p{
+    margin: 15px 0;
+    width: 100%;
+  }& ul{
+    list-style: none;
+  }
 }
 .advantages_wrapper{
   @include flex;
@@ -243,11 +259,6 @@ header{
   list-style: none;
   text-align: left;
   margin: 15px;
-  & i{
-    font-size: 2.2rem;
-    color: $accent;
-    margin-right: 5px;
-  }
 }
 .teacher_img{
   width: 300px;
@@ -273,7 +284,7 @@ header{
   font-size: 4rem;
   color: $accent;
   font-family: "OswaldBold";
-  animation: blink 1.2s ease-in-out infinite;
+  animation: blink 1s ease-in-out infinite;
 }
 .subscr_arrow{
   position: absolute;
@@ -282,10 +293,6 @@ header{
 }
 .news_right_col{
   position: relative;
-}
-.vk_ref{
-  display: block;
-  position: relative;
   & img{
     width: 95%;
     @include transition(all, .3s, ease);
@@ -293,26 +300,35 @@ header{
       box-shadow: 0 0 3px 2px $accent;
     }
   }
+  & span{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    @include transform(translateX(-50%) translateY(-50%));
+    font-size: 6rem;
+    color: $accent;
+    font-family:"OswaldBold";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include transform(translate(-50%, -50%));
+  }
 }
-.click{
-  font-size: 6rem;
-  color: $accent;
-  font-family:"OswaldBold";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  @include transform(translate(-50%, -50%));
+.vk_ref{
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 @keyframes blink{
   0%{
-    @include transform(scale(1  ));
+    @include transform(rotate(5deg));
   }
   50%{
-    @include transform(scale(1.1));
+    @include transform(rotate(-5deg));
   }
   100%{
-    @include transform(scale(1  ));
+    @include transform(rotate(5deg));
   }
 }
 .section_form p{

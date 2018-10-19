@@ -12,6 +12,7 @@ $(document).ready(function(){
    }, 500);
   });
 
+
   // Small device menu animation
 
   $(".burger_menu").click(function(){

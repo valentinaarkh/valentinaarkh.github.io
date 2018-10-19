@@ -158,6 +158,11 @@ button.call {
   .red_button:hover {
     background: #f43333; }
 
+.fa-graduation-cap {
+  font-size: 2.2rem;
+  color: #f43333;
+  margin-right: 5px; }
+
 .section .subheading {
   font-size: 2rem;
   font-family: "OpenSansBold";
@@ -325,9 +330,19 @@ header {
   line-height: 2.5rem;
   letter-spacing: 0.5px;
   margin: 15px auto;
-  width: 70%;
+  width: 80%;
   text-indent: 2rem;
   text-align: justify; }
+
+.about_small_section {
+  text-align: left;
+  width: 80%;
+  margin: 0 auto; }
+  .about_small_section p {
+    margin: 15px 0;
+    width: 100%; }
+  .about_small_section ul {
+    list-style: none; }
 
 .advantages_wrapper {
   display: -webkit-flex;
@@ -372,10 +387,6 @@ header {
   list-style: none;
   text-align: left;
   margin: 15px; }
-  .teacher_descr li i {
-    font-size: 2.2rem;
-    color: #f43333;
-    margin-right: 5px; }
 
 .teacher_img {
   width: 300px;
@@ -405,7 +416,7 @@ header {
   font-size: 4rem;
   color: #f43333;
   font-family: "OswaldBold";
-  animation: blink 1.2s ease-in-out infinite; }
+  animation: blink 1s ease-in-out infinite; }
 
 .subscr_arrow {
   position: absolute;
@@ -414,52 +425,60 @@ header {
 
 .news_right_col {
   position: relative; }
-
-.vk_ref {
-  display: block;
-  position: relative; }
-  .vk_ref img {
+  .news_right_col img {
     width: 95%;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease; }
-    .vk_ref img:hover {
+    .news_right_col img:hover {
       box-shadow: 0 0 3px 2px #f43333; }
+  .news_right_col span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 6rem;
+    color: #f43333;
+    font-family: "OswaldBold";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
 
-.click {
-  font-size: 6rem;
-  color: #f43333;
-  font-family: "OswaldBold";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%); }
+.vk_ref {
+  display: block;
+  width: 100%;
+  height: 100%; }
 
 @keyframes blink {
   0% {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-    transform: scale(1); }
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+    transform: rotate(5deg); }
   50% {
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    transform: scale(1.1); }
+    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+    transform: rotate(-5deg); }
   100% {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-    transform: scale(1); } }
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+    transform: rotate(5deg); } }
 
 .section_form p {
   text-align: center; }
