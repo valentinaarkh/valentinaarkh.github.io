@@ -49,7 +49,8 @@ $(document).ready(function(){
    slidesToScroll: 1,
    arrows: false,
    fade: true,
-   asNavFor: '.gallery_slider'
+   asNavFor: '.gallery_slider',
+   adaptiveHeight: true
   });
   $('.gallery_slider').slick({
    slidesToShow: 3,
@@ -60,4 +61,14 @@ $(document).ready(function(){
    focusOnSelect: true
   });
 
+	$('#gallery').magnificPopup({
+		delegate: 'a',
+		type: 'image',
+		tLoading: 'Loading image #%curr%...',
+		mainClass: 'mfp-img-mobile',
+		gallery: {
+			enabled: true,
+			navigateByImgClick: true
+		}
+	});
 });

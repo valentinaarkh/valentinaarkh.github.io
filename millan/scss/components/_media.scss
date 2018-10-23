@@ -64,6 +64,12 @@
   .subscr_animation{
     left: 0;
   }
+  #gallery{
+    flex-wrap: wrap;
+    .col{
+      width: 33%;
+    }
+  }
 }
 @media (max-width: 576px) {
   .section p{
@@ -110,6 +116,9 @@
   }
   .subscr_arrow{
     right: -30px;
+  }
+  .about_small_section{
+    width: 100%;
   }
 }
 @media (max-width: 430px){
